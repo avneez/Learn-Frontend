@@ -1,0 +1,105 @@
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-item{
+    width: 35vw;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.inner-container {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+ul {
+    padding: 0;
+    /* border-top: 1px; */
+    margin: 0;
+
+}
+
+.container-item li{
+    list-style-type: none;
+    /* border-bottom: 1px solid black; */
+    /* border-top: 0; */
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li h2 {
+    margin: 0;
+    font-weight: 200;
+}
+
+.logo{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.logo img{
+    width:150px;
+}
+
+.form{
+    background-color: rgb(245,245,255);
+    font-size: 16px;
+    padding: 20px 30px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 5px 5px 5px 5px;
+}
+
+
+.center {
+  position: relative;
+  padding: 50px 50px;
+  background-color:rgb(245,245,255);;
+  border-radius: 10px;
+  /* overflow: auto; */
+}
+
+.center .inputbox {
+  position: relative;
+  width: 450px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+
+.center .inputbox [type="button"] {
+  position: absolute;
+  left: 342px;
+  width: 30%;
+  /* transform: translateX(400px); */
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
