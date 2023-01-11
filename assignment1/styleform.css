@@ -53,20 +53,9 @@ li h2 {
     width:150px;
 }
 
-.form{
-    background-color: rgb(245,245,255);
-    font-size: 16px;
-    padding: 20px 30px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    margin: 5px 5px 5px 5px;
-}
-
-
 .center {
   position: relative;
-  padding: 50px 50px;
+  padding: 20px 50px;
   background-color:rgb(245,245,255);;
   border-radius: 10px;
   /* overflow: auto; */
@@ -75,7 +64,7 @@ li h2 {
 .center .inputbox {
   position: relative;
   width: 450px;
-  height: 50px;
+  height: 20px;
   margin-bottom: 50px;
 }
 .center .inputbox input {
@@ -91,12 +80,13 @@ li h2 {
   font-size: 1.2em;
 }
 .center .inputbox:last-child {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .center .inputbox [type="button"] {
   position: absolute;
   left: 342px;
+  top:5px;
   width: 30%;
   /* transform: translateX(400px); */
   background: dodgerblue;
