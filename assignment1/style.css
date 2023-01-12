@@ -41,9 +41,11 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow:auto;
 }
 
 li h2 {
+    font-size: 20px;
     margin: 0;
     font-weight: 200;
 }
@@ -67,12 +69,16 @@ li h2 {
 }
 
 .addressColor{
+    font-size: 15px;
     background-color: rgb(245,245,255);
-    font-size: 18px;
 }
+/* .nth{
+
+} */
 
 li button {
-    font-size: 20px;
+    /* font-size: 20px; */
+
     padding: 10px 15px;
     border: none;
     border-radius: 10px;

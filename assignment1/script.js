@@ -1,3 +1,7 @@
 function pageRedirect() {
-  window.location.href = "/Learn-Frontend/assignment1/ethform.html";
+  window.location.href = "/assignment1/ethform.html";
+}
+
+function transaction(){
+  window.location.href = "/assignment1/trans.html";
 }
