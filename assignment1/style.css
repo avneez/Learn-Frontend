@@ -1,0 +1,81 @@
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-item{
+    width: 35vw;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.inner-container {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+ul {
+    padding: 0;
+    /* border-top: 1px; */
+    margin: 0;
+
+}
+
+.first {
+    border-top: 1px solid black;
+}
+
+.container-item li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li h2 {
+    margin: 0;
+    font-weight: 200;
+}
+
+.logo{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.logo img{
+    width:150px;
+}
+
+.price {
+    float: right;
+}
+
+.price span {
+    margin-left: 2px;
+    font-size: 10px;
+}
+
+.addressColor{
+    background-color: rgb(245,245,255);
+    font-size: 18px;
+}
+
+li button {
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color:dodgerblue;
+    color: white;
+}

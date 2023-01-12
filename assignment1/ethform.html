@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETH Form</title>
+    <link rel="stylesheet" href="/Learn-Frontend/assignment1/styleform.css">
+    <script>
+        function transaction(){
+            window.location.href = "/Learn-Frontend/assignment1/trans.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-item">
+            <div class="logo"><img src="/Learn-Frontend/assignment1/images/utrust-logo.png"></div>
+            <div class="inner-container">
+
+                <li style="border-bottom:1px solid black;">
+                    <h2>Please fill the form to send Ethereum</h2>
+                </li>
+                <div class="center">
+                    <form>
+                        <div style="margin: 0px 0px 0px 8px; font-size: 25px;">From</div>
+                        <div class="inputbox">
+                            <input type="text" required="required" placeholder="Sender Address">
+                            <!-- <span>Sender Address</span> -->
+                        </div>
+                        <div style="margin: 0px 0px 0px 8px; font-size: 25px;">To</div>
+                        <div class="inputbox">
+                            <input type="text" required="required" placeholder="Receiver Address">
+                        </div>
+                        <div style="margin: 0px 0px 0px 8px; font-size: 25px;">Amount</div>
+                        <div class="inputbox">
+                            <input type="text" required="required" placeholder="Amount">
+                        </div>
+                        <div class="inputbox">
+                           <button onclick="transaction()">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

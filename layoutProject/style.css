@@ -1,0 +1,105 @@
+/* navbar container */
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul {
+    overflow: auto;
+    /* padding:0; */
+    margin-right: 160px;
+    /* float: right; */
+    /* width: 50%; */
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+}
+
+.logo {
+    float: left;
+    margin-left: 130px;
+    color: black;
+}
+
+.navbar li {
+    /* display: flex; */
+    float: right;
+    color: black;
+    list-style: none;
+    margin-right: 15px;
+}
+
+
+/* Image and Text Container */
+
+.imageTextContainer {
+    width: 100%;
+    /* position: relative; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /* scrollbar-width: 1px; */
+}
+
+.imageContainer {
+    width: 80%;
+    position: relative;
+    background-color: black;
+    overflow: auto;
+    box-sizing: content-box;
+}
+
+.imageContainer img {
+    /* background-size: contain; */
+    /* position: relative; */
+    z-index: -1;
+    width: 100%;
+    height: 60vh;
+    opacity: 0.5;
+}
+
+.text {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+}
+
+.text h1 {
+    font-size: 60px;
+}
+
+.text p {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.text button {
+    font-size: 15px;
+    padding: 13px 18px;
+}
+
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    margin: 10px 160px 0px 160px;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+/* .grid-text-p{
+      display: flex;
+      justify-content: center;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    } */
+
+/* .grid-container h3{
+      display: flex;
+      justify-content: center;
+  } */
