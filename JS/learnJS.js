@@ -40,8 +40,6 @@ const fun = async(text)=>{
 
 
 //Write a JS program to find average of numbers in an array using spread syntax
-function sum(a,b,c){
-    return a+b+c/3;
-}
+const average = array => array.reduce((a, b) => a + b) /array.length;
 let x=[1,3,5,1]
-console.log(sum(...x))
+console.log(average(x))
