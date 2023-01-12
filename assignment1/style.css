@@ -1,6 +1,8 @@
-body {
+html,body {
     height: 100vh;
     font-family: sans-serif;
+    margin:0;
+    padding: 0;
 }
 
 .container{
@@ -11,7 +13,7 @@ body {
 }
 
 .container-item{
-    width: 35vw;
+    width: 30rem;
     justify-content: center;
     /* border: 2px solid black; */
 }
