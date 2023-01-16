@@ -1,0 +1,12 @@
+html,body{
+    height:100%;
+    width:100%;
+}
+.bulbcontainer{
+    width: 300px;
+    height: 300px;
+}
+
+.bulb{
+    background-color:rgb(228, 231, 38);
+}
