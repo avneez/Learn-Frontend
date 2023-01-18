@@ -13,30 +13,51 @@
 // Computer will display "+-"
 // The "+" is for the digit “1”
 // the "-" is for the digit 3
-// Let me know if you need any clarity on this problem
 
-var y = Math.floor(1000 + Math.random() * 9000);
 
-var guess = 1;
+
+// function generateOTP() {
+//     var digits = '0123456789';
+//     var y = '';
+//     for (let i = 0; i < 4; i++ ) {
+//     if(((i>0) && y[i-1]===y[i])){  //1356
+//         continue;
+//     }
+//     else
+//         y += digits[Math.floor(Math.random() * 10)];
+//     }
+//     // console.log(y);
+//     return y;
+// }
+
+const generateOTP = () => {
+    var numbers = [0,1,2,3,4,5,6,7,8,9];
+    for (var i = numbers.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = numbers[i];
+      numbers[i] = numbers[j];
+      numbers[j] = temp;
+    }
+    console.log(numbers);
+    return numbers.slice(0,4).join('')
+  }
 
 function guessNumber() {
+    var z=generateOTP();
+    console.log("Computer-> "+z);
+
     const prompt=require("prompt-sync")({sigint:true});
     var x= prompt("Enter the number ")
-
-    let mp = {}
-
-    console.log(mp)
-
-    //if (x == y) {
-    //     console.log("Your guess is right "+ guess);
-    // }
-    // else if (x > y) {
-    //     guess++;
-    //     console.log("your guess is wrong, try a smaller number");
-    // }
-    // else {
-    //     guess++;
-    //     ("your guess is wrong , try a greater number")
-    // }
+    
+    let ans="";
+    for(let i=0; i<4; i++){
+        if(x[i]==z[i]){
+            ans+='+';
+        }
+        else if(x.includes(z[i])){
+            ans+='-';
+        }
+    }
+    console.log(ans)
 }
 guessNumber();

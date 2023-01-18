@@ -42,3 +42,9 @@ p1.then((value)=>{
 p2.catch((error)=>{
     console.log("Some Error occured in p2")
 })
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+      

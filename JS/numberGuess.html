@@ -18,33 +18,7 @@
 			class = "guessSubmit"
 			id = "submitguess">
 	</div>
+<script src="./numberGuess.js"></script>
 
-	<script type = "text/javascript">
-
-	var y = Math.floor(Math.random() * 10 + 1);
-
-	var guess = 1;
-
-	document.getElementById("submitguess").onclick = function(){
-
-		var x = document.getElementById("guessField").value;
-
-		if(x == y)
-		{
-			alert("Your guess is right "
-				+ guess);
-		}
-		else if(x > y)
-		{
-			guess++;
-			alert("your guess is wrong, try a smaller number");
-		}
-		else
-		{
-			guess++;
-			alert("your guess is wrong , try a gretaer number")
-		}
-	}
-	</script>
 </body>
 </html>
