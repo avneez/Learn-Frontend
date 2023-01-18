@@ -38,7 +38,7 @@ const generateOTP = () => {
       numbers[i] = numbers[j];
       numbers[j] = temp;
     }
-    console.log(numbers);
+    // console.log(numbers);
     return numbers.slice(0,4).join('')
   }
 
@@ -48,7 +48,7 @@ function guessNumber() {
 
     const prompt=require("prompt-sync")({sigint:true});
     var x= prompt("Enter the number ")
-    
+
     let ans="";
     for(let i=0; i<4; i++){
         if(x[i]==z[i]){
