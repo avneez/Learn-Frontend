@@ -11,7 +11,7 @@ function findDup(arr){
     });
     return arr2;
 }
-console.log(findDup(arr));
+// console.log(findDup(arr));
 
 // const myset = new Set(arr);
 // console.log(myset);
@@ -22,3 +22,16 @@ console.log(findDup(arr));
 // const arr=[];
 // arr.push(1);
 // console.log(arr)
+
+
+const obj={
+    name:"avneez",
+    func: function (){
+        let name = "mohit"
+        return ()=>{
+            console.log(name);
+        }
+    }
+}
+
+console.log(obj.func());

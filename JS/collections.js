@@ -1,12 +1,12 @@
 // //Map
-// const mp = new Map();
+const mp = new Map();
 
 // const key1 = 'str1', key2 = {}, key3 = function () { };
 
 // //setting map values
-// mp.set(key1, 'this is a string');
-// mp.set(key2, 'this is a blank object');
-// mp.set(key3, 'this is an empty function');
+mp.set(key1, 'this is a string');
+mp.set(key2, 'this is a blank object');
+mp.set(key3, 'this is an empty function');
 // console.log(mp);
 
 // //getting the values from a map
@@ -46,13 +46,13 @@
 
 
 // //Set
-// const mySet= new Set();
+const mySet= new Set();
 // console.log('the set looks like', mySet);
 
-// mySet.add('this');
-// mySet.add('Avneez');
-// mySet.add(34);
-// mySet.add(true);
+mySet.add('this');
+mySet.add('Avneez');
+mySet.add(34);
+mySet.add(true);
 // console.log('mySet looks like', mySet);
 
 // let mySet2 = new Set([1,45,'this',true,{a:4, b:8},'this']);
@@ -66,8 +66,10 @@
 // console.log('after removal', mySet);
 
 
-let x=5;
-let y='5';
+// let x=5;
+// let y='5';
 
-console.log(x===y)  //equal value and equal type
-console.log(x==y)
+// console.log(x===y)  //equal value and equal type
+// console.log(x==y)
+
+
