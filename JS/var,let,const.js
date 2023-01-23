@@ -1,22 +1,25 @@
-function f() {
 
-    // It can be accessible any
-    // where within this function
-    var a = 10;
-    // console.log(a)
-}
-f();
+
+const fetch = require("node-fetch")
+// function f() {
+
+//     // It can be accessible any
+//     // where within this function
+//     var a = 10;
+//     // console.log(a)
+// }
+// f();
 
 // A cannot be accessible
 // outside of function
 // console.log(a);
-{var v=5}
+// {var v=5}
 //  console.log(v)
 
 
-t=5;
-var t;
-console.log(t)
+// t=5;
+// var t;
+// console.log(t)
 
 
 // Users cannot change the properties of the const object, but they can change the value of the properties of the const object.
@@ -37,11 +40,11 @@ console.log(t)
 
 
     //ReferenceError: Cannot access 'z' before initialization
-    z =8;
-    let z;
-    console.log(z)
+    // z =8;
+    // let z;
+    // console.log(z)
 
-	z=8;
+	// z=8;
 
 
 // var z;
@@ -59,3 +62,12 @@ console.log(t)
 // console.log(c);
 // console.log(d);
 // console.log(z)
+
+
+
+function getApi(){
+    const result = fetch("https://jsonplaceholder.typicode.com/posts");
+    return result;
+}
+console.log(getApi());
+console.log("d")

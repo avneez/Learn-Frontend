@@ -71,5 +71,3 @@ mySet.add(true);
 
 // console.log(x===y)  //equal value and equal type
 // console.log(x==y)
-
-

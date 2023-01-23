@@ -29,4 +29,3 @@ const flattened = flattenObj(obj1);
 console.log(flattened);
 
 //Unflattened Obj
-
