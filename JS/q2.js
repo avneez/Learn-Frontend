@@ -34,4 +34,23 @@ const obj={
     }
 }
 
-console.log(obj.func());
+// console.log(obj.func());
+
+function x(){
+    for(var i=1; i<=5; i++){
+        setTimeout(function (){
+            console.log(i);
+        },i*1000)
+    }
+    console.log("Namaste");
+}
+// x();
+
+async function foo() {
+    await 1;
+  }
+
+  function foo() {
+    return Promise.resolve(1).then(() => undefined);
+  }
+

@@ -47,3 +47,20 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => response.json())
       .then(json => console.log(json))
       .catch(console.log("error"))
+
+
+
+//promises namaste js
+
+const cart = ["shoes", "pants", "kurta"];
+
+// createOrder(cart,function(orderId){
+//     proceedToPay(orderId);
+// });
+
+const promise = createOrder(cart);
+
+promise.then(function(orderId){
+    proceedToPay(orderId);
+});
+
