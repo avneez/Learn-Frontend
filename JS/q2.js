@@ -24,6 +24,7 @@
 // console.log(arr)
 
 
+<<<<<<< HEAD
 // const obj={
 //     name:"avneez",
 //     func: function(){
@@ -95,3 +96,55 @@ console.log(arr)  //avneez
 
 person.name = 'akshay';
 console.log(arr);  //avneez
+=======
+const obj={
+    name:"avneez",
+    func: function(){
+        let name = "mohit"
+        return ()=>{
+            console.log(name);
+        }
+    }
+}
+
+const obj2={
+    name:"avneez",
+    func: function(){
+        // let name1 = "mohit"
+        console.log("a")
+        return this;
+    }
+}
+
+// console.log(obj.name)
+obj.func()()
+// console.log(obj.func())
+// console.log(obj2.func())
+// t = Object.create(obj);
+// console.log(t.name)
+// console.log(obj.a);
+// console.log(obj.func);
+
+
+
+
+// function x(){
+//     for(var i=1; i<=5; i++){
+//         setTimeout(function (){
+//             console.log(i);
+//         },i*1000)
+//     }
+//     console.log("Namaste");
+// }
+// // x();
+
+// async function foo() {
+//     await 1;
+//   }
+
+//   function foo() {
+//     return Promise.resolve(1).then(() => undefined);
+//   }
+
+console.error("bye");
+>>>>>>> 161f2c2 (24-jan)
