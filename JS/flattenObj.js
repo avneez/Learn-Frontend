@@ -25,6 +25,22 @@ function flattenObj(obj){
     return finalObj;
 };
 
+// function flattenObj(obj){
+//     const finalObj ={};
+//     for(const i in obj){             //i is parent obj here
+//         if((typeof obj[i])!=='object'){
+//             finalObj[i]=obj[i];
+//         }
+//         else{
+//             const temp = flattenObj(obj[i]);
+//             for(const j in temp){
+//                 finalObj[i+'.'+j] = temp[j];
+//             }
+//         }
+//     }
+//     return finalObj;
+// };
+
 const flattened = flattenObj(obj1);
 console.log(flattened);
 

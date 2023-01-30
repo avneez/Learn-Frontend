@@ -1,13 +1,16 @@
 // //Map
+
+// const avn =[1,2];
+
 const mp = new Map();
 
-// const key1 = 'str1', key2 = {}, key3 = function () { };
+const key1 = 'str1', key2 = {}, key3 = function () { };
 
 // //setting map values
 mp.set(key1, 'this is a string');
 mp.set(key2, 'this is a blank object');
 mp.set(key3, 'this is an empty function');
-// console.log(mp);
+console.log(mp);
 
 // //getting the values from a map
 // let value1 = mp.get(key1);
@@ -26,11 +29,11 @@ mp.set(key3, 'this is an empty function');
 //     console.log('value is', key)
 // }
 
-// //forEach
-// mp.forEach((value,key)=>{
-//     console.log('key is',key)
-//     console.log('value is',value)
-// })
+//forEach
+mp.forEach((value,key)=>{
+    console.log('key is',key)
+    console.log('value is',value)
+})
 
 // //converting map to an array
 // let myArray = Array.from(mp);
@@ -71,3 +74,27 @@ mySet.add(true);
 
 // console.log(x===y)  //equal value and equal type
 // console.log(x==y)
+
+
+// int ans=0;
+//     while(numm>0){
+//         int rem =numm%10;
+//         ans+=rem*10;
+//         numm=numm/2;
+//     }
+//     return ans;
+// }
+
+// var myMap = {};
+// var key = "a", value=1;
+// myMap[key] = value;
+// console.log(myMap)
+
+
+// let arr=[1,1,[2,3,3],[3,3,4]];
+// let arr2=[[1,1],[2,3,3],[3,3,4]];
+// let s= new Set([{a:4},{b:2},{a:2},{a:1}],[{a:1}],[{a:2}]);
+// let s2 = new Set(arr)
+// console.log(s);
+
+// console.log(s2);
