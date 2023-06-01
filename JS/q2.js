@@ -25,6 +25,9 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e9f0b1 (extras files)
 // const obj={
 //     name:"avneez",
 //     func: function(){
@@ -34,6 +37,7 @@
 //         }
 //     }
 // }
+<<<<<<< HEAD
 
 // const obj2={
 //     name:"avneez",
@@ -106,18 +110,20 @@ const obj={
         }
     }
 }
+=======
+>>>>>>> 8e9f0b1 (extras files)
 
-const obj2={
-    name:"avneez",
-    func: function(){
-        // let name1 = "mohit"
-        console.log("a")
-        return this;
-    }
-}
+// const obj2={
+//     name:"avneez",
+//     func: function(){
+//         // let name1 = "mohit"
+//         console.log("a")
+//         return this;
+//     }
+// }
 
 // console.log(obj.name)
-obj.func()()
+// obj.func()()
 // console.log(obj.func())
 // console.log(obj2.func())
 // t = Object.create(obj);
@@ -146,5 +152,30 @@ obj.func()()
 //     return Promise.resolve(1).then(() => undefined);
 //   }
 
+<<<<<<< HEAD
 console.error("bye");
 >>>>>>> 161f2c2 (24-jan)
+=======
+// console.error("bye");
+
+function f(text){
+    text.name = 'britani';
+    text=null;
+    return text;
+}
+
+let person = {
+    name:'avneez',
+}
+
+// const obj = f(person);
+// console.log(person); //britani
+// console.log(obj); //null
+
+const arr =[person];
+// person=null;
+console.log(arr)  //avneez
+
+person.name = 'akshay';
+console.log(arr);  //avneez
+>>>>>>> 8e9f0b1 (extras files)
