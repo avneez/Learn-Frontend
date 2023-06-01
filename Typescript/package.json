@@ -1,0 +1,17 @@
+{
+  "name": "avneez",
+  "version": "1.0.0",
+  "description": "practicing ts",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "avneez",
+  "license": "ISC",
+  "dependencies": {
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5"
+  }
+}
