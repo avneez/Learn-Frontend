@@ -9,7 +9,7 @@ function App() {
 
   const fetchData = () => {
     axios.get(`${url}/api/products`)
-      .then((response) => { setProducts(response.data.data); console.log('response', response) })
+      .then((response) => setProducts(response.data.data))
       .catch((error) => console.error(error))
   }
 
@@ -19,7 +19,9 @@ function App() {
 
   return (
     <>
-      <h2>My Products</h2>
+      <div>
+        <h3>My Products ({products.length})</h3>
+      </div>
       {!(products.length > 0) && <div>No Products  Yet...</div>}
       {
         products.length > 0 &&
