@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import axios from 'axios'
 
 const ProductsListing = () => {
@@ -7,15 +7,15 @@ const ProductsListing = () => {
   const PORT = 3000
   const url = `http://localhost:${PORT}`
 
-  const fetchData = () => {
+  const fetchData = useCallback(() => {
     axios.get(`${url}/api/products`)
       .then((response) => setProducts(response.data.data))
       .catch((error) => console.error(error))
-  }
+  },[url])
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
   
   return (
       <>
